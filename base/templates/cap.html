@@ -1,0 +1,6 @@
+ {% for cart in cart %}
+ <h1>{{cart.name}}</h1>
+ <a href="{{cart.get_absolute_url }}">good</a>
+ <img src="{{product.images.url}}" alt="IMG-PRODUCT">
+ 
+{% endfor %}

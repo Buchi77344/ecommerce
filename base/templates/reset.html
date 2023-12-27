@@ -1,0 +1,8 @@
+<h2>Enter new password</h2>
+<p>Please enter your new password twice so we can verify you typed it in correctly.</p>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"><caption>Change Password</caption></button>
+</form>
